@@ -1,0 +1,877 @@
+Username:  rollers
+Date:      Mon Apr 29 23:24:46 EDT 2019
+ 
+*** compiling ***
+make: 'assign10' is up to date.
+--- Running ---
+ 
+
+Please enter the number of vertices: 
+You entered 7
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 1
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 1
+Enter the child edge: Entered 4
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 3
+Enter the child edge: Entered 4
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 4
+Enter the child edge: Entered 5
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 4
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 6
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 3
+next node in is list = 1
+Adjacency list of 1
+next node in is list = 4
+next node in is list = 2
+Adjacency list of 2
+Adjacency list of 3
+next node in is list = 4
+Adjacency list of 4
+next node in is list = 2
+next node in is list = 5
+Adjacency list of 5
+Adjacency list of 6
+next node in is list = 3
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 0
+
+DFS_V visiting: 0
+DFS_V visiting: 3
+DFS_V visiting: 4
+DFS_V visiting: 2
+DFS_V visiting: 5
+DFS_V visiting: 1
+DFS_V visiting: 6
+0 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 2
+
+DFS_V visiting: 0
+DFS_V visiting: 3
+DFS_V visiting: 4
+DFS_V visiting: 2
+DFS_V visiting: 5
+DFS_V visiting: 1
+DFS_V visiting: 6
+0 began DFS and was successful
+The topological sort results:
+next node in topological sort = 6
+next node in topological sort = 0
+next node in topological sort = 1
+next node in topological sort = 3
+next node in topological sort = 4
+next node in topological sort = 5
+next node in topological sort = 2
+Topological Sort Complete
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 3
+
+DFS_V visiting: 3
+DFS_V visiting: 4
+DFS_V visiting: 2
+DFS_V visiting: 5
+DFS_V visiting: 6
+DFS_V visiting: 0
+DFS_V visiting: 1
+3 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 4
+
+DFS_V visiting: 4
+DFS_V visiting: 2
+DFS_V visiting: 5
+DFS_V visiting: 6
+DFS_V visiting: 3
+DFS_V visiting: 0
+DFS_V visiting: 1
+4 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 5
+
+DFS_V visiting: 5
+DFS_V visiting: 6
+DFS_V visiting: 3
+DFS_V visiting: 4
+DFS_V visiting: 2
+DFS_V visiting: 0
+DFS_V visiting: 1
+5 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 2
+
+DFS_V visiting: 0
+DFS_V visiting: 3
+DFS_V visiting: 4
+DFS_V visiting: 2
+DFS_V visiting: 5
+DFS_V visiting: 1
+DFS_V visiting: 6
+0 began DFS and was successful
+The topological sort results:
+next node in topological sort = 6
+next node in topological sort = 0
+next node in topological sort = 1
+next node in topological sort = 3
+next node in topological sort = 4
+next node in topological sort = 5
+next node in topological sort = 2
+Topological Sort Complete
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 0
+
+BFS visited: 0
+BFS visited: 3
+BFS visited: 1
+BFS visited: 4
+BFS visited: 2
+BFS visited: 5
+5 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 1
+
+BFS visited: 1
+BFS visited: 4
+BFS visited: 2
+BFS visited: 5
+5 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 3
+
+BFS visited: 3
+BFS visited: 4
+BFS visited: 2
+BFS visited: 5
+5 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 4
+
+BFS visited: 4
+BFS visited: 2
+BFS visited: 5
+5 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 4
+
+Copy Constructor, n = 7
+doing DFS with copy
+DFS_V visiting: 0
+DFS_V visiting: 3
+DFS_V visiting: 4
+DFS_V visiting: 2
+DFS_V visiting: 5
+DFS_V visiting: 1
+DFS_V visiting: 6
+0 began DFS and was successful
+Deconstructor Executing
+Deconstructor Executing
+--- Running again ---
+ 
+
+Please enter the number of vertices: 
+You entered 5
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 1
+Enter the child edge: Entered 4
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 2
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 3
+Enter the child edge: Entered 0
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 2
+next node in is list = 1
+Adjacency list of 1
+next node in is list = 4
+Adjacency list of 2
+next node in is list = 3
+Adjacency list of 3
+next node in is list = 0
+Adjacency list of 4
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 2
+
+DFS_V visiting: 2
+DFS_V visiting: 3
+DFS_V visiting: 0
+DFS_V visiting: 1
+DFS_V visiting: 4
+2 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 0
+
+DFS_V visiting: 0
+DFS_V visiting: 2
+DFS_V visiting: 3
+DFS_V visiting: 1
+DFS_V visiting: 4
+0 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 2
+
+DFS_V visiting: 0
+DFS_V visiting: 2
+DFS_V visiting: 3
+DFS_V visiting: 1
+DFS_V visiting: 4
+0 began DFS and was successful
+The topological sort results:
+**graph contains a cycle, top sort undefined**
+Topological Sort Complete
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 0
+
+BFS visited: 0
+BFS visited: 2
+BFS visited: 1
+BFS visited: 3
+BFS visited: 4
+4 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 1
+
+BFS visited: 1
+BFS visited: 4
+4 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 2
+
+BFS visited: 2
+BFS visited: 3
+BFS visited: 0
+BFS visited: 1
+BFS visited: 4
+4 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 4
+
+Copy Constructor, n = 5
+doing DFS with copy
+DFS_V visiting: 0
+DFS_V visiting: 2
+DFS_V visiting: 3
+DFS_V visiting: 1
+DFS_V visiting: 4
+0 began DFS and was successful
+Deconstructor Executing
+Deconstructor Executing
+--- Running again ---
+ 
+
+Please enter the number of vertices: 
+You entered 5
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 2
+next node in is list = 1
+Adjacency list of 1
+Adjacency list of 2
+Adjacency list of 3
+Adjacency list of 4
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 0
+
+DFS_V visiting: 0
+DFS_V visiting: 2
+DFS_V visiting: 1
+DFS_V visiting: 3
+DFS_V visiting: 4
+0 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 1
+
+DFS_V visiting: 1
+DFS_V visiting: 2
+DFS_V visiting: 3
+DFS_V visiting: 4
+DFS_V visiting: 0
+1 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 2
+
+DFS_V visiting: 2
+DFS_V visiting: 3
+DFS_V visiting: 4
+DFS_V visiting: 0
+DFS_V visiting: 1
+2 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 3
+
+DFS_V visiting: 3
+DFS_V visiting: 4
+DFS_V visiting: 0
+DFS_V visiting: 2
+DFS_V visiting: 1
+3 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 4
+
+DFS_V visiting: 4
+DFS_V visiting: 0
+DFS_V visiting: 2
+DFS_V visiting: 1
+DFS_V visiting: 3
+4 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 2
+
+DFS_V visiting: 0
+DFS_V visiting: 2
+DFS_V visiting: 1
+DFS_V visiting: 3
+DFS_V visiting: 4
+0 began DFS and was successful
+The topological sort results:
+next node in topological sort = 4
+next node in topological sort = 3
+next node in topological sort = 0
+next node in topological sort = 1
+next node in topological sort = 2
+Topological Sort Complete
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 0
+
+BFS visited: 0
+BFS visited: 2
+BFS visited: 1
+1 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 1
+
+BFS visited: 1
+1 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 2
+
+BFS visited: 2
+2 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 3
+
+BFS visited: 3
+3 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 4
+
+BFS visited: 4
+4 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 4
+
+Copy Constructor, n = 5
+doing DFS with copy
+DFS_V visiting: 0
+DFS_V visiting: 2
+DFS_V visiting: 1
+DFS_V visiting: 3
+DFS_V visiting: 4
+0 began DFS and was successful
+Deconstructor Executing
+Deconstructor Executing
+--- Running again ---
+ 
+
+Please enter the number of vertices: 
+You entered 5
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 1
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 3
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 4
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 3
+next node in is list = 1
+Adjacency list of 1
+next node in is list = 2
+Adjacency list of 2
+Adjacency list of 3
+next node in is list = 2
+Adjacency list of 4
+next node in is list = 3
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 0
+
+DFS_V visiting: 0
+DFS_V visiting: 3
+DFS_V visiting: 2
+DFS_V visiting: 1
+DFS_V visiting: 4
+0 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 2
+
+DFS_V visiting: 0
+DFS_V visiting: 3
+DFS_V visiting: 2
+DFS_V visiting: 1
+DFS_V visiting: 4
+0 began DFS and was successful
+The topological sort results:
+next node in topological sort = 4
+next node in topological sort = 0
+next node in topological sort = 1
+next node in topological sort = 3
+next node in topological sort = 2
+Topological Sort Complete
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 3
+
+Enter an integer: 
+You entered 0
+
+BFS visited: 0
+BFS visited: 3
+BFS visited: 1
+BFS visited: 2
+2 began BFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 4
+
+Copy Constructor, n = 5
+doing DFS with copy
+DFS_V visiting: 0
+DFS_V visiting: 3
+DFS_V visiting: 2
+DFS_V visiting: 1
+DFS_V visiting: 4
+0 began DFS and was successful
+Deconstructor Executing
+Deconstructor Executing
+---Running again 5---
+ 
+
+Please enter the number of vertices: 
+You entered 3
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 1
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 2
+Enter the child edge: Entered 0
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 1
+Adjacency list of 1
+next node in is list = 2
+Adjacency list of 2
+next node in is list = 0
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: 
+You entered 0
+
+DFS_V visiting: 0
+DFS_V visiting: 1
+DFS_V visiting: 2
+0 began DFS and was successful
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 2
+
+DFS_V visiting: 0
+DFS_V visiting: 1
+DFS_V visiting: 2
+0 began DFS and was successful
+The topological sort results:
+**graph contains a cycle, top sort undefined**
+Topological Sort Complete
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 4
+
+Copy Constructor, n = 3
+doing DFS with copy
+DFS_V visiting: 0
+DFS_V visiting: 1
+DFS_V visiting: 2
+0 began DFS and was successful
+Deconstructor Executing
+Deconstructor Executing
+---Running Again ---
+ 
+
+Please enter the number of vertices: 
+You entered 5
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 2
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 3
+Enter the child edge: Entered 4
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 4
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 2
+next node in is list = 1
+Adjacency list of 1
+Adjacency list of 2
+next node in is list = 3
+Adjacency list of 3
+next node in is list = 4
+Adjacency list of 4
+next node in is list = 2
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 2
+
+DFS_V visiting: 0
+DFS_V visiting: 2
+DFS_V visiting: 3
+DFS_V visiting: 4
+DFS_V visiting: 1
+0 began DFS and was successful
+The topological sort results:
+**graph contains a cycle, top sort undefined**
+Topological Sort Complete
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 4
+
+Copy Constructor, n = 5
+doing DFS with copy
+DFS_V visiting: 0
+DFS_V visiting: 2
+DFS_V visiting: 3
+DFS_V visiting: 4
+DFS_V visiting: 1
+0 began DFS and was successful
+Deconstructor Executing
+Deconstructor Executing
+ 

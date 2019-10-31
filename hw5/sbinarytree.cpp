@@ -1,0 +1,343 @@
+/*
+#Filename: sbinarytree.cpp
+
+#Author: Seth Roller
+
+#Date: 3/26/19
+
+#Program Name: assign7.cpp
+
+#Assignment Number: 7
+
+#Problem: Will be implementing a binary tree 
+in the form of a array
+
+#Flow: The layout is all the functions filled in.
+The functions will be utilized in the main program 
+
+#Sources:
+http://www.cplusplus.com/reference/cmath/pow/
+*the link above was referenced into how pow works
+from the math header file
+
+https://www.tutorialspoint.com/data_structures_algorithms/
+tree_traversal.htm
+*the link above was used to gain an understanding
+of the traversals
+
+I have thoroughly tested my code and it works properly 
+
+ */
+#include "sbinarytree.h"// header file
+#include <stddef.h>  // for NULL
+#include <iostream>
+#include <math.h>
+
+binarytree::binarytree()  
+{
+  numberofelements = 0;
+  BTheight = 0;
+  //set all values in array to -1
+  for (int i = 0; i < MAX; i++)
+    theArray[i] = -1;
+  cout << "Constructor is executing" << endl;
+
+}  // end default constructor
+
+void binarytree::addNode(int item, bool &Success)
+{
+  //if inserting into the root
+  if (numberofelements == 0) {
+    theArray[0] = item;
+    Success = true;
+    BTheight++;
+    numberofelements++;
+  }
+
+  //if the user tries to add into a full tree
+  else if (numberofelements == 100) {
+    cout << "The binary tree is full, cannot add more\n";
+    Success = false;
+  }
+
+  //if insert is not in the root position
+  else {
+    theArray[numberofelements] = item;
+    Success = true;
+    //if the number of elements is 1 or 0 the height will
+    //increase or if the numberofelements exceeds the
+    //total number of elements that can be in the tree
+    if ((numberofelements+1) > (pow(2, BTheight)-1) ||
+	numberofelements < 2)
+      BTheight++;
+    numberofelements++;
+  }
+  
+}
+
+void binarytree::deleteNode(int &item, bool &Success)
+{
+  //if the tree is empty
+  if (numberofelements == 0) {
+    cout << "The binary tree is empty so nothing can be deleted\n\n";
+    Success = false;
+  }
+
+  //if it is NOT empty
+  else {
+    item = theArray[numberofelements - 1];
+    theArray[numberofelements - 1] = -1;
+    Success = true;
+    numberofelements--;
+    //redefines the height of the tree
+    if (pow(2, BTheight-1)-1 == numberofelements)
+      BTheight--;
+  }
+}
+
+void binarytree::displayLevel(int level) const
+{
+  //start and endpoints and
+  int start = pow(2, level-1) - 1;
+  int end = pow(2, level-1) + start;
+  int x;
+
+  //x is defined for how many elements there are
+  //at the level i
+  if (end - 1 >= numberofelements)
+    x = (numberofelements-1);
+  else
+    x = (end - 1);
+
+  
+  if (level == 1 && numberofelements > 0)
+    cout << theArray[0] << endl;
+
+  //if the level is above 1, x serves as a stopping point 
+  else if (level <= BTheight && level > 1) {
+    for (int i = start; i <= x; i++) {
+      if (theArray[i+1] == -1 || i == x)
+	cout << theArray[i] << endl;
+      else
+	cout << theArray[i] << ",";
+    }
+
+  }
+
+  else {
+
+    //account the list being empty
+    if (numberofelements == 0)
+      cout << "The tree is empty" << endl;
+    //this accounts for if the user asks for a level
+    //that does not exist
+    else {
+      cout << "You entered " << level << " which is\n";
+      cout << "greater than the height.\nEnter an integer";
+      cout << " that is less than or equal to " << BTheight;
+      cout << "\n\n";
+    }
+    
+  }
+}
+
+void binarytree::preorder() const
+{
+
+  //if the tree is empty
+  if (theArray[0] == -1) {
+      cout << "The tree is empty";
+      return;
+  }
+
+  //declarations for the traversal
+
+  //stack that will be used
+  BTstack theStack;
+
+  //bool values for the push and pop
+  bool Successpush = true;
+  bool Successpop = true;
+
+  //comeback is the bitem we send for pop
+  bitem comeback = {0, 0};
+
+  //cur is the first item in the array
+  bitem curr = {0, theArray[0]};
+
+  //right and left are bitem used to
+  //push a bitem onto the stack 
+  bitem right = {0, 0};
+  bitem left = {0, 0};
+
+  theStack.pushBTstack(curr,Successpush);
+
+  while (Successpop) {
+    
+    theStack.popBTstack(comeback, Successpop);
+    cout << comeback.treeitem << " ";
+
+    //if the right child is not null add to stack
+    if (theArray[2*(comeback.treeindex)+2] != -1) {
+      right = {2*(comeback.treeindex)+2,
+		  theArray[2*(comeback.treeindex)+2]};
+      theStack.pushBTstack(right,Successpush);
+    }
+
+    //if the left child is not null add to stack
+    if (theArray[2*(comeback.treeindex)+1] != -1) {
+      left = {2*(comeback.treeindex)+1,
+                  theArray[2*(comeback.treeindex)+1]};
+      theStack.pushBTstack(left,Successpush);
+      
+    }
+
+    //this checks if the stack is empty
+    theStack.popBTstack(comeback, Successpop);
+    if (Successpop == true)
+      theStack.pushBTstack(comeback,Successpush);
+    else
+      cout << endl;
+    
+  } // end of while
+
+} // end of inorder
+
+void binarytree::inorder() 
+{
+  if (theArray[0] == -1) {
+      cout << "The tree is empty";
+      return;
+  }
+
+  //stack that will be used
+  BTstack theStack;
+
+  //bool values for the push and pop
+  bool Successpush = true;
+  bool Successpop = true;
+
+  //comeback is the bitem we send for pop
+  bitem comeback = {0, 0};
+
+  //cur is the first item in the array
+  bitem curr = {0, theArray[0]};
+
+  //right and left are bitem used to
+  //to push a bitem on the stack
+  bitem right = {0, 0};
+  bitem left = {0, 0};
+
+  //Dr. Bracken gave us pseucode
+  //for this inorder traversal 
+  
+  //push root
+  theStack.pushBTstack(curr, Successpush);
+  while (Successpop) {
+
+    theStack.popBTstack(comeback, Successpop);
+
+    if (comeback.treeitem != -1) {
+      right.treeitem = theArray[2*comeback.treeindex+2];
+      right.treeindex = 2*comeback.treeindex+2;
+
+      left.treeitem = theArray[2*comeback.treeindex+1];
+      left.treeindex = 2*comeback.treeindex+1;
+
+      //push right child, then parent, then left child
+      theStack.pushBTstack(right, Successpush);
+      theStack.pushBTstack(comeback, Successpush);
+      theStack.pushBTstack(left, Successpush);
+
+    }
+
+    //this is where the print occurs
+    else {
+      theStack.popBTstack(comeback, Successpop);
+      if (Successpop == true) {
+        cout << comeback.treeitem << " ";
+      }
+    }
+
+    //checks to see if the stack is empty
+    theStack.popBTstack(comeback, Successpop);
+    if (Successpop == true)
+      theStack.pushBTstack(comeback,Successpush);
+    else
+      cout << endl;
+  } // end of while 
+
+}
+
+void binarytree::postorder() const
+{
+  if (theArray[0] == -1) {
+      cout << "The tree is empty";
+      return;
+  }
+
+  //stack1 will be the stack that
+  //will traverse through the array
+  //stack2 will be pushed the contents from stack1
+  //so that the post order printing will occur
+  BTstack theStack1;
+  BTstack theStack2;
+
+  //bool values for the push and pop
+  bool Successpush = true;
+  bool Successpop = true;
+
+   //comeback is the bitem we send for pop
+  bitem comeback = {0, 0};
+
+  //cur is the first item in the array
+  bitem curr = {0, theArray[0]};
+
+  //right and left are bitem used to
+  //to push a bitem on the stack
+  bitem right = {0, 0};
+  bitem left = {0, 0};
+
+  //push root
+  theStack1.pushBTstack(curr, Successpush);
+  while (Successpop) {
+
+    //pop stack1 and push its contents in stack2
+    theStack1.popBTstack(comeback, Successpop);
+    theStack2.pushBTstack(comeback, Successpush);
+
+    //if left child is not -1 push 
+    if (theArray[2*comeback.treeindex+1] != -1) {
+      left.treeitem = theArray[2*comeback.treeindex+1];
+      left.treeindex = 2*comeback.treeindex+1;
+      theStack1.pushBTstack(left, Successpush);
+    }
+
+    //if right child is not -1 push
+    if (theArray[2*comeback.treeindex+2] != -1) {
+      right.treeitem = theArray[2*comeback.treeindex+2];
+      right.treeindex = 2*comeback.treeindex+2;
+      theStack1.pushBTstack(right, Successpush);
+    }
+
+    //checks to see if stack1 is empty
+    theStack1.popBTstack(comeback, Successpop);
+    if (Successpop == true)
+      theStack1.pushBTstack(comeback,Successpush);
+        
+  }
+
+  //print out the contents of the stack2
+  theStack2.BTPrint();
+
+}
+
+int binarytree::height() const
+{
+  return BTheight;
+}
+
+int binarytree::howmanyelements() const
+{
+  return numberofelements;
+}

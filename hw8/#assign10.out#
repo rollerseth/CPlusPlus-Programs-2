@@ -1,0 +1,299 @@
+Username:  rollers
+Date:      Mon Apr 29 14:11:25 EDT 2019
+ 
+*** compiling ***
+make: 'assign10' is up to date.
+--- Running ---
+ 
+
+Please enter the number of vertices: 
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 1
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 1
+Enter the child edge: Entered 4
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 3
+Enter the child edge: Entered 4
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 4
+Enter the child edge: Entered 5
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 4
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 6
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 3
+next node in is list = 1
+Adjacency list of 1
+next node in is list = 4
+next node in is list = 2
+Adjacency list of 2
+Adjacency list of 3
+next node in is list = 4
+Adjacency list of 4
+next node in is list = 2
+next node in is list = 5
+Adjacency list of 5
+Adjacency list of 6
+next node in is list = 3
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: You entered 0
+
+emacsDFS_V visiting: 0
+visiting 3
+DFS_V visiting: 3
+visiting 4
+DFS_V visiting: 4
+visiting 2
+DFS_V visiting: 2
+Segmentation fault (core dumped)
+--- Running again ---
+ 
+
+Please enter the number of vertices: 
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 1
+Enter the child edge: Entered 4
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 2
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 3
+Enter the child edge: Entered 0
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 2
+next node in is list = 1
+Adjacency list of 1
+next node in is list = 4
+Adjacency list of 2
+next node in is list = 3
+Adjacency list of 3
+next node in is list = 0
+Adjacency list of 4
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: You entered 2
+
+DFS_V visiting: 2
+visiting 3
+DFS_V visiting: 3
+visiting 0
+DFS_V visiting: 0
+visiting 1
+DFS_V visiting: 1
+visiting 4
+DFS_V visiting: 4
+Segmentation fault (core dumped)
+--- Running again ---
+ 
+
+Please enter the number of vertices: 
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 2
+next node in is list = 1
+Adjacency list of 1
+Adjacency list of 2
+Adjacency list of 3
+Adjacency list of 4
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: You entered 0
+
+DFS_V visiting: 0
+visiting 2
+DFS_V visiting: 2
+Segmentation fault (core dumped)
+--- Running again ---
+ 
+
+Please enter the number of vertices: 
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 1
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 3
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 4
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 3
+next node in is list = 1
+Adjacency list of 1
+next node in is list = 2
+Adjacency list of 2
+Adjacency list of 3
+next node in is list = 2
+Adjacency list of 4
+next node in is list = 3
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: You entered 0
+
+DFS_V visiting: 0
+visiting 3
+DFS_V visiting: 3
+visiting 2
+DFS_V visiting: 2
+Segmentation fault (core dumped)
+---Running again 5---
+ 
+
+Please enter the number of vertices: 
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 1
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 2
+Enter the child edge: Entered 0
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 1
+Adjacency list of 1
+next node in is list = 2
+Adjacency list of 2
+next node in is list = 0
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 1
+
+Enter an integer: You entered 0
+
+DFS_V visiting: 0
+visiting 1
+DFS_V visiting: 1
+visiting 2
+DFS_V visiting: 2
+Segmentation fault (core dumped)
+---Running Again ---
+ 
+
+Please enter the number of vertices: 
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 1
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 0
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 2
+Enter the child edge: Entered 3
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 3
+Enter the child edge: Entered 4
+
+Do you have a edge to enter(y or n)? 
+Enter the parent edge: Entered 4
+Enter the child edge: Entered 2
+
+Do you have a edge to enter(y or n)? 
+Adjacency list of 0
+next node in is list = 2
+next node in is list = 1
+Adjacency list of 1
+Adjacency list of 2
+next node in is list = 3
+Adjacency list of 3
+next node in is list = 4
+Adjacency list of 4
+next node in is list = 2
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 2
+
+
+Enter 1 to do DFS
+Enter 2 to do topological sort
+Enter 3 to do BFS
+Enter 4 to exit
+You entered 4
+
+ 
